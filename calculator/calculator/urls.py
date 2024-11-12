@@ -19,5 +19,5 @@ from django.urls import path
 from calc import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('',views.calculator)
+    path('', views.calculator, name='calculator'),
 ]
