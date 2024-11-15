@@ -16,7 +16,8 @@
                 <img src="{% static 'img/history.png' %}">
             </div>
         </div>
-        <form method="post">
+        <!-- <iframe name="hidden_iframe" style="display: none;"></iframe> -->
+        <form method="post">  <!--target == hidden_iframe = no refresh -->
             {% csrf_token %}
             <input type="text" name="display" class="display" value="{{ display }}" readonly>
             <div class="memory-buttons">
